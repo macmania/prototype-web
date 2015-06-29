@@ -1,0 +1,109 @@
+/*
+* Temporary styling
+**/
+
+
+
+
+.box-shadow-menu {
+    position: relative;
+    padding-left: 1.25em;
+    font-size:1.5em;
+}
+.box-shadow-menu:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 1em;
+    height: 0.15em;
+    background: black;
+    box-shadow:
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
+}
+
+.header {
+    padding-top: 1.5%;
+}
+
+.expand-menu {
+    margin-left: 2%;
+    width:20%;
+}
+
+
+/**
+* styling for the user options
+*/
+.right-menu {
+    float: right;
+    width:30%;
+    padding-right: 5%;
+}
+.registration, .log-in {
+    display: inline-block
+}
+
+.user-registration {
+
+}
+
+.main, .main-content {
+    width:100%;
+    height:100%;
+}
+
+.grid-item-link {
+    width: 33.33%;
+
+}
+
+
+.main-archive .grid-item-link {
+    float:left;
+    padding:2px;
+}
+
+
+#post-island-hopping{
+    background-image: url("/static/pictures/island_hopping.jpg");
+}
+
+#post-blue-sea {
+    background-image: url("/static/pictures/blue_sea.jpg");
+
+}
+
+#post-fields {
+    background-image: url("/static/pictures/fields.jpg");
+}
+#post-mornings-mountains {
+    background-image: url("/static/pictures/mornings_mountains.jpg");
+}
+#post-mountains {
+    background-image: url("/static/pictures/mountains.jpg");
+}
+#post-rizal-blvd {
+    background-image: url("/static/pictures/rizal_blvd.jpg");
+}
+#post-rizal-park {
+    background-image: url("/static/pictures/rizal_park.jpg");
+}
+
+#post-sea-sky {
+    background-image: url("/static/pictures/island_hopping.jpg");
+
+}
+
+#post-sky-mountains {
+    background-image: url("/static/pictures/island_hopping.jpg");
+
+}
+
+#post-sky-sea {
+    background-image: url("/static/pictures/island_hopping.jpg");
+}
+
+
+

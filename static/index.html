@@ -1,17 +1,22 @@
 <!doctype html>
 <html>
     <head>
-        <title> Prototype for Morning Islands site </title>
+        <title>Mornings in Philippines</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/semantic-ui/0.19.3/css/semantic.min.css">
+
+        <!--Temporarily commenting this out to improve debugging work-flow-->
+        <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/semantic-ui/0.19.3/css/semantic.min.css">-->
+
         <link href='http://fonts.googleapis.com/css?family=Lato'
           rel='stylesheet' type='text/css'>
-        
+
         
         <!-- imported stylesheets -->            
         <link rel="stylesheet" href="/static/css/normalize.css">
         <link rel="stylesheet" href="/static/css/main.css">
-        
+        <link rel="stylesheet" href="/static/css/semantic.min.css">
+        <link rel="stylesheet" href="/static/css/semantic.css">
+
         <!-- custom stylesheets -->
         <link rel="stylesheet" href="/static/css/index.css">
         <link rel="stylesheet" href="/static/css/landing.css">
@@ -20,26 +25,106 @@
     <body id="top" class="home landing-page">
         <div class="main-wrap">
             <header class="header header-search">
+                <div class="expand-menu">
+                    <a href="#menu" class="box-shadow-menu">
+                    </a>
+                </div>
+
                 <div class="site-logo plain">
                     <div class="site-title">
                         <!-- site will be in the center -->
                     </div>
                 </div>
-                <nav id="nav-menu">   
+                <nav id="nav-menu">
                     <!-- other pertinent information to store here on 
                     the landing page -->
-                </nav> 
+                    <!-- this will store any sort of information for
+                    the user to find 'blog-posts' that are important, may or may
+                    not incorporate to streamline simplicity-->
+                </nav>
+                <div class="right-menu ui right aligned grid" style="padding-right:5%;">
+                    <div class="right floated center aligned  two column row">
+                        <div class="registration log-in">
+                            <div class="column  user-log-in">
+                                <div class="ui segment green ui button">
+                                    Log-in
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column user-registration">
+                            <div class="ui segment black ui button">
+                                 Register
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </header>
         </div>
 
         <!-- where all of the articles will be posted -->
         <section class="main main-content">
             <div id="content" class="loop">
-                
+                <!-- to-do, need to link the pictures -->
+                <!-- to-do, need to do this part in emberJS -->
+                <a class="grid-item-link" href="/user/">
+                    <article id="post-island-hopping" class="grid-item">
+
+                    </article>
+
+                </a>
+
+                <a class="grid-item-link" href="/user/">
+                    <article id="post-sky-sea" class="grid-item">
+
+                    </article>
+                </a>
+
+                <a class="grid-item-link" href="/user/">
+                    <article id="post-blue-sea">
+                    </article>
+                </a>
+
+                <a class="grid-item-link" href="/user/">
+                    <article id="post-fields">
+
+                    </article>
+                </a>
+
+                <a class="grid-item-link" href="/user/">
+                    <article id="post-mornings-mountains">
+
+                    </article>
+                </a>
+                <a class="grid-item-link" href="/user/">
+                    <article id="post-mountains">
+
+                    </article>
+                </a>
+                <a class="grid-item-link" href="/user/">
+                    <article id="post-rizal-blvd">
+
+                    </article>
+                </a>
+                <a class="grid-item-link" href="/user/">
+                    <article id="post-rizal-park">
+
+                    </article>
+                </a>
+                <a class="grid-item-link" href="/user/">
+                    <article id="post-sea-sky">
+
+                    </article>
+                </a>
+                <a class="grid-item-link" href="/user/">
+                    <article id="post-sky-mountains">
+
+                    </article>
+                </a>
+
             </div>
         </section>
         
-        <h1>Hello :)</h1>
+        <h1 style="padding-right:5%;">Hello :)</h1>
         
     </body>
 
