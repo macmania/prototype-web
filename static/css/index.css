@@ -61,7 +61,7 @@
 
 
 .main-archive .grid-item-link {
-    float:left;
+
     padding:2px;
 }
 
@@ -119,14 +119,14 @@
 }
 
 #post-sea-sky {
-    background-image: url("/static/pictures/island_hopping.jpg");
+    background-image: url("/static/pictures/sea_sky.jpg");
     height:50%;
     width:33%;
 
 }
 
 #post-sky-mountains {
-    background-image: url("/static/pictures/island_hopping.jpg");
+    background-image: url("/static/pictures/sky_mountains.jpg");
     height:50%;
     width:33%;
 }
