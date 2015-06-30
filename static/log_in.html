@@ -3,11 +3,13 @@
 <!--to-do still need to improve in terms of better front-end and
     architecture design and ui/ux design mechanism-->
 <!DOCTYPE html>
-<html style="background-color: rgb(191, 181, 221);">
+<html style="background-color: rgb(255, 255, 255);">
 <head>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/static/css/semantic.min.css">
     <link rel="stylesheet" href="/static/css/register.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato'
+          rel='stylesheet' type='text/css'>
 <body>
 <div id="login-modal" role="modal-container login-modal-container" style="display: block;">
     <div class="overlay" style="display: block;"></div>
@@ -19,49 +21,75 @@
         </div>
 
 
-        <div class="ui grid modal-content">
+        <div class="ui equal width center aligned padded grid modal-content">
             <div class="oauth-buttons">
-
-               
-                <div class="ui button" id="facebook-oauth-button-login-modal"
-                     data-scope="openid"
-                     data-clientid="1624172244526263"
-                     data-redirecturi="postmessage"
-                     data-accesstype="offline"
-                     data-accesstype="single_host_origin"
-                     data-callback="signInCallback"
-                     data-approvalprompt="force"
-                     data-provider-name="facebook"
-                     class="button oauth-button">
-                        <span class="button-text">
-                            Log-in with Facebook
-                        </span>
-                </div>
-                <div class="ui button" id="google-oauth-button-login-modal"
-                     data-provider-name="google"
-                     class="button oauth-button">
-                        <span class="button-text">
-                            Log-in with Google
-                        </span>
-                </div>
-
-                <div class="ui button" id="yahoo-oauth-button-login-modal" data-provider-name="yahoo"
-                     class="button oauth-button">
-                        <span class="button-text">
-                            Log-in with Yahoo
-                        </span>
-                </div>
-                <div>
-                    <div class="ui button"id="weibo-oauth-button-login-modal" data-provider-name="weibo"
+                <div class="row">
+                    <div class="ui button oauth" id="facebook-oauth-button-login-modal"
+                         data-scope="openid"
+                         data-clientid="1624172244526263"
+                         data-redirecturi="postmessage"
+                         data-accesstype="offline"
+                         data-accesstype="single_host_origin"
+                         data-callback="signInCallback"
+                         data-approvalprompt="force"
+                         data-provider-name="facebook"
                          class="button oauth-button">
                             <span class="button-text">
-                                Log-in with Weibo
+                                Login with Facebook
                             </span>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="ui button oauth" id="google-oauth-button-login-modal"
+                         data-provider-name="google"
+                         class="button oauth-button">
+                            <span class="button-text">
+                                Login with Google
+                            </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="ui button oauth" id="yahoo-oauth-button-login-modal" data-provider-name="yahoo"
+                         class="button oauth-button">
+                            <span class="button-text">
+                                Login with Yahoo
+                            </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <div class="ui button oauth" id="twitter-oauth-button-login-modal" data-provider-name="twitter"
+                             class="button oauth-button">
+                            <span class="button-text">
+                                Login with Twitter
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <div class="ui button oauth" id="weibo-oauth-button-login-modal" data-provider-name="weibo"
+                             class="button oauth-button">
+                                <span class="button-text">
+                                    Login with Weibo
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
+</div>
+
+
+<div class="sign-in">
+    
 </div>
 
 
