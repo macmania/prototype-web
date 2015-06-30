@@ -75,7 +75,7 @@
 #post-blue-sea {
     background-image: url("/static/pictures/blue_sea.jpg");
     height:50%;
-    width:33%;
+    width:66.67%;
     /**float:left;**/
     /**height:20%;
     width:33.33%; **/
@@ -84,7 +84,7 @@
 #post-fields {
     background-image: url("/static/pictures/fields.jpg");
     height:50%;
-    width:33%;
+    width:66.67%;
     /**
     height:20%;
     width:33.33%;
@@ -94,7 +94,7 @@
 #post-mornings-mountains {
     background-image: url("/static/pictures/mornings_mountains.jpg");
     height:50%;
-    width:33%;
+    width:66.67%;
     /**
     height:20%;
     width:33.33%;
@@ -105,7 +105,7 @@
 #post-mountains {
     background-image: url("/static/pictures/mountains.jpg");
     height:50%;
-    width:33%;
+    width:66.67%;
 }
 #post-rizal-blvd {
     background-image: url("/static/pictures/rizal_blvd.jpg");
