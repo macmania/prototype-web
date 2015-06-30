@@ -1,1 +1,105 @@
-<!--- Temporary file for now just to do the templating -->
+<!--- Temporary file for now just to do the templating for the registration-->
+
+<!--to-do still need to improve in terms of better front-end and
+    architecture design and ui/ux design mechanism-->
+<!DOCTYPE html>
+<html style="background-color: rgb(191, 181, 221);">
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/css/semantic.min.css">
+    <link rel="stylesheet" href="/static/css/register.css">
+<body>
+<div id="login-modal" role="modal-container login-modal-container" style="display: block;">
+    <div class="overlay" style="display: block;"></div>
+    <div class="modal login-modal account-modal" role="dialog"
+         aria-labelledby="login-modal-modal-heading" tabindex="-1">
+        <div class="modal-header">
+            <h3 class="modal-heading" id="login-modal-modal-heading">Log in</h3>
+            <h4 class="modal-subheading">Find all information from the Island</h4>
+        </div>
+
+
+        <div class="ui grid modal-content">
+            <div class="oauth-buttons">
+
+               
+                <div class="ui button" id="facebook-oauth-button-login-modal"
+                     data-scope="openid"
+                     data-clientid="1624172244526263"
+                     data-redirecturi="postmessage"
+                     data-accesstype="offline"
+                     data-accesstype="single_host_origin"
+                     data-callback="signInCallback"
+                     data-approvalprompt="force"
+                     data-provider-name="facebook"
+                     class="button oauth-button">
+                        <span class="button-text">
+                            Log-in with Facebook
+                        </span>
+                </div>
+                <div class="ui button" id="google-oauth-button-login-modal"
+                     data-provider-name="google"
+                     class="button oauth-button">
+                        <span class="button-text">
+                            Log-in with Google
+                        </span>
+                </div>
+
+                <div class="ui button" id="yahoo-oauth-button-login-modal" data-provider-name="yahoo"
+                     class="button oauth-button">
+                        <span class="button-text">
+                            Log-in with Yahoo
+                        </span>
+                </div>
+                <div>
+                    <div class="ui button"id="weibo-oauth-button-login-modal" data-provider-name="weibo"
+                         class="button oauth-button">
+                            <span class="button-text">
+                                Log-in with Weibo
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="result"></div>
+
+<!---Temporary, script-->
+
+<script>
+    function signInCallback(authResult){
+        if(authResult['code']){
+            $('#login-modal').attr('style', 'display:none'); //remove the display
+
+            $.ajax({
+                type: 'POST',
+                url:'/gconnect?state={{STATE}}',
+                processData:false,
+                data: authResult['code'],
+                contentType: 'application/octet-stream; charset=utf-8',
+                success: function(result) {
+                    //Handle or verify the server response if necessary
+
+                    if(result){
+                        $('#result').html('Login Successful!</br>' + result + '</br>Redirecting...')
+                        setTimeout(function(){
+                            window.location.href='/home';
+                        },4000);
+                    }
+                    else if(authResult['error']){
+                        console.log('There was an error: ' + authResult['error']);
+                    }
+                    else{
+                        $('#result').html('Failed to make a server-side call. Check your configuration and console');
+                    }
+                }
+            });
+        }
+
+    }
+</script>
+</body>
+</html>
