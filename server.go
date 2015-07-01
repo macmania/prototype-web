@@ -21,8 +21,8 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func staticHandler(w http.ResponseWriter, r *http.Request) {
-	log.Println("in static handler " + r.URL.Path[8:])
-	http.ServeFile(w, r, "mornings-island/public/"+r.URL.Path[8:])
+	log.Println("in static handler " + r.URL.Path[12:])
+	http.ServeFile(w, r, "mornings-island/app/styles/"+r.URL.Path[12:])
 }
 
 func picHandler(w http.ResponseWriter, r *http.Request) {
