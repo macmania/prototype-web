@@ -11,80 +11,105 @@
     <link href='http://fonts.googleapis.com/css?family=Lato'
           rel='stylesheet' type='text/css'>
 <body>
-<div id="login-modal" role="modal-container login-modal-container" style="display: block;">
-    <div class="overlay" style="display: block;"></div>
-    <div class="modal login-modal account-modal" role="dialog"
-         aria-labelledby="login-modal-modal-heading" tabindex="-1">
-        <div class="modal-header">
-            <h3 class="modal-heading" id="login-modal-modal-heading">Log in</h3>
-            <h4 class="modal-subheading">Find all information from the Island</h4>
-        </div>
+
+<div id="login-modal" class="modal-container login-modal-container ui
+    two column middle aligned relaxed fitted stackable grid" style="display: block;">
+    <div class="column">
+        <!--<div class="overlay" style="display: block;"></div>-->
+        <div class="modal login-modal account-modal" role="dialog"
+             aria-labelledby="login-modal-modal-heading" tabindex="-1">
+            <div class="modal-header">
+                <h3 class="modal-heading" id="login-modal-modal-heading">Log in</h3>
+                <h4 class="modal-subheading">Find all information from the Island</h4>
+            </div>
 
 
-        <div class="ui equal width center aligned padded grid modal-content">
-            <div class="oauth-buttons">
-                <div class="row">
-                    <div class="ui button oauth" id="facebook-oauth-button-login-modal"
-                         data-scope="openid"
-                         data-clientid="1624172244526263"
-                         data-redirecturi="postmessage"
-                         data-accesstype="offline"
-                         data-accesstype="single_host_origin"
-                         data-callback="signInCallback"
-                         data-approvalprompt="force"
-                         data-provider-name="facebook"
-                         class="button oauth-button">
-                            <span class="button-text">
-                                Login with Facebook
-                            </span>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="ui button oauth" id="google-oauth-button-login-modal"
-                         data-provider-name="google"
-                         class="button oauth-button">
-                            <span class="button-text">
-                                Login with Google
-                            </span>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="ui button oauth" id="yahoo-oauth-button-login-modal" data-provider-name="yahoo"
-                         class="button oauth-button">
-                            <span class="button-text">
-                                Login with Yahoo
-                            </span>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div>
-                        <div class="ui button oauth" id="twitter-oauth-button-login-modal" data-provider-name="twitter"
-                             class="button oauth-button">
-                            <span class="button-text">
-                                Login with Twitter
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div>
-                        <div class="ui button oauth" id="weibo-oauth-button-login-modal" data-provider-name="weibo"
+            <div class="ui equal width center aligned padded grid modal-content">
+                <div class="oauth-buttons">
+                    <div class="row">
+                        <div class="ui button oauth" id="facebook-oauth-button-login-modal"
+                             data-scope="openid"
+                             data-clientid="1624172244526263"
+                             data-redirecturi="postmessage"
+                             data-accesstype="offline"
+                             data-accesstype="single_host_origin"
+                             data-callback="signInCallback"
+                             data-approvalprompt="force"
+                             data-provider-name="facebook"
                              class="button oauth-button">
                                 <span class="button-text">
-                                    Login with Weibo
+                                    Login with Facebook
                                 </span>
                         </div>
                     </div>
-                </div>
 
+                    <div class="row">
+                        <div class="ui button oauth" id="google-oauth-button-login-modal"
+                             data-provider-name="google"
+                             class="button oauth-button">
+                                <span class="button-text">
+                                    Login with Google
+                                </span>
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="ui button oauth" id="yahoo-oauth-button-login-modal" data-provider-name="yahoo"
+                             class="button oauth-button">
+                                <span class="button-text">
+                                    Login with Yahoo
+                                </span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <div class="ui button oauth" id="twitter-oauth-button-login-modal" data-provider-name="twitter"
+                                 class="button oauth-button">
+                                <span class="button-text">
+                                    Login with Twitter
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <div class="ui button oauth" id="weibo-oauth-button-login-modal" data-provider-name="weibo"
+                                 class="button oauth-button">
+                                    <span class="button-text">
+                                        Login with Weibo
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
+    </div>
+
+    <div class="ui vertical divider"><span style="font-family: Lato">Or</span></div>
+
+    <div class="column">
+        <div class="ui form segment">
+            <div class="field">
+                <label>Email Address</label>
+                <div class="ui left icon input">
+                    <input placeholder="Email Address" type="text">
+                    <i class="email icon"></i>
+                </div>
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <div class="ui left icon input">
+                    <input type="password">
+                    <i class="lock icon"></i>
+                </div>
+            </div>
+            <div class="ui blue submit button" style="font-family: Lato;">Login</div>
+        </div>
+    </div>
+
 </div>
 
 
